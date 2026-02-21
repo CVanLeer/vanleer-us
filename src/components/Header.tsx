@@ -7,10 +7,11 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
-    { href: "#services", label: "Services" },
-    { href: "#process", label: "Process" },
-    { href: "#about", label: "About" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#services", label: "Services" },
+    { href: "/#process", label: "Process" },
+    { href: "/#about", label: "About" },
+    { href: "/blog", label: "Blog" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -23,20 +24,20 @@ export function Header() {
         {/* Desktop */}
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="rounded-lg bg-slate-950 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-slate-800"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -59,22 +60,22 @@ export function Header() {
       {mobileOpen && (
         <div className="border-t border-slate-200 bg-white px-6 py-4 md:hidden">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="block py-2 text-sm font-medium text-slate-600"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="mt-2 block rounded-lg bg-slate-950 px-5 py-2.5 text-center text-sm font-medium text-white"
             onClick={() => setMobileOpen(false)}
           >
             Get Started
-          </a>
+          </Link>
         </div>
       )}
     </header>
