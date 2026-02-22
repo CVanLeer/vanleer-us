@@ -1,16 +1,25 @@
-import { Carousel } from "./Carousel";
+"use client";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* Carousel */}
-      <Carousel />
+      {/* Animated mesh background */}
+      <div className="hero-mesh" />
 
-      {/* Content overlay */}
-      <div className="relative py-16 md:py-24">
+      {/* Subtle grid pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.3) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative py-20 md:py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="max-w-3xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-400">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-600">
               AI Strategy &amp; Implementation
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-950 md:text-6xl md:leading-[1.1]">
@@ -25,7 +34,7 @@ export function Hero() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#readiness"
-                className="rounded-lg bg-slate-950 px-8 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                className="rounded-lg bg-amber-600 px-8 py-3.5 text-center text-sm font-semibold text-white transition-colors hover:bg-amber-700"
               >
                 Check Your AI Readiness
               </a>

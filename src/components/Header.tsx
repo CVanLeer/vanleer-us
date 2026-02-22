@@ -34,7 +34,7 @@ export function Header() {
           ))}
           <Link
             href="/#contact"
-            className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-slate-950 transition-colors hover:bg-slate-200"
+            className="rounded-lg bg-amber-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-amber-600"
           >
             Get Started
           </Link>
@@ -71,7 +71,7 @@ export function Header() {
           ))}
           <Link
             href="/#contact"
-            className="mt-2 block rounded-lg bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-950"
+            className="mt-2 block rounded-lg bg-amber-500 px-5 py-2.5 text-center text-sm font-medium text-white"
             onClick={() => setMobileOpen(false)}
           >
             Get Started

@@ -73,7 +73,7 @@ export function Timeline() {
                       <div
                         className={`h-9 w-9 rounded-full border-[3px] transition-all duration-500 ${
                           m.current
-                            ? "border-slate-950 bg-slate-950"
+                            ? "border-amber-500 bg-amber-500"
                             : i < 2
                             ? "border-slate-950 bg-white"
                             : "border-slate-300 bg-white"
@@ -81,7 +81,7 @@ export function Timeline() {
                         style={{ transitionDelay: `${i * 150}ms` }}
                       />
                       {m.current && (
-                        <div className="absolute -inset-2 animate-ping rounded-full bg-slate-950/20" />
+                        <div className="absolute -inset-2 animate-ping rounded-full bg-amber-500/20" />
                       )}
                     </div>
 
@@ -98,7 +98,7 @@ export function Timeline() {
                         {m.description}
                       </p>
                       {m.current && (
-                        <span className="mt-2 inline-block rounded-full bg-slate-950 px-3 py-0.5 text-xs font-medium text-white">
+                        <span className="mt-2 inline-block rounded-full bg-amber-500 px-3 py-0.5 text-xs font-medium text-white">
                           You are here
                         </span>
                       )}
@@ -119,7 +119,7 @@ export function Timeline() {
                     <div
                       className={`h-3 w-3 rounded-full ${
                         m.current
-                          ? "bg-slate-950 ring-4 ring-slate-950/20"
+                          ? "bg-amber-500 ring-4 ring-amber-500/20"
                           : i < 2
                           ? "bg-slate-950"
                           : "bg-slate-300"
@@ -136,7 +136,7 @@ export function Timeline() {
                   </p>
                   <p className="mt-1 text-sm text-slate-500">{m.description}</p>
                   {m.current && (
-                    <span className="mt-2 inline-block rounded-full bg-slate-950 px-3 py-0.5 text-xs font-medium text-white">
+                    <span className="mt-2 inline-block rounded-full bg-amber-500 px-3 py-0.5 text-xs font-medium text-white">
                       You are here
                     </span>
                   )}

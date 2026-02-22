@@ -7,7 +7,6 @@ import { Timeline } from "@/components/Timeline";
 import { Process } from "@/components/Process";
 import { Partnership } from "@/components/Partnership";
 import { About } from "@/components/About";
-import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { FloatingCard } from "@/components/FloatingCard";
@@ -40,9 +39,6 @@ export default function Home() {
         </FloatingCard>
         <FloatingCard id="about" parallaxSpeed={0.02}>
           <About />
-        </FloatingCard>
-        <FloatingCard parallaxSpeed={0.035}>
-          <Testimonials />
         </FloatingCard>
         <FloatingCard id="contact" variant="dark" parallaxSpeed={0.025}>
           <Contact />

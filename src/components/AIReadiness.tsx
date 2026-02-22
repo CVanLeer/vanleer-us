@@ -159,7 +159,7 @@ export function AIReadiness() {
           <div className="mt-8 text-center">
             <button
               onClick={handleShowResults}
-              className="rounded-lg bg-slate-950 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+              className="rounded-lg bg-amber-600 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-amber-700"
             >
               See Your Score
             </button>
@@ -184,7 +184,7 @@ export function AIReadiness() {
               <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                 <a
                   href="#contact"
-                  className="rounded-lg bg-slate-950 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+                  className="rounded-lg bg-amber-600 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-amber-700"
                 >
                   Get Your Free Assessment
                 </a>
