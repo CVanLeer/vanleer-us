@@ -11,9 +11,9 @@ export function CleanDataPost() {
       </p>
 
       <p>
-        We&apos;ve seen this firsthand. We run AI systems across a 13-location
-        restaurant operation, and the single most dangerous thing in our entire
-        stack isn&apos;t a model or an algorithm — it&apos;s a product name.
+        We&apos;ve seen this firsthand across multiple client engagements, and
+        the single most dangerous thing in any data stack isn&apos;t a model or
+        an algorithm — it&apos;s a product name.
       </p>
 
       <h2>The Silent Rename Disaster</h2>

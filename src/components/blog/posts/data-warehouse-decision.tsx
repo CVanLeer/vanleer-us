@@ -11,10 +11,9 @@ export function DataWarehouseDecisionPost() {
       </p>
 
       <p>
-        We&apos;ve run both BigQuery and Supabase (PostgreSQL) in production for
-        over a year, serving a multi-location restaurant operation. Here&apos;s
-        what we&apos;ve learned about when to use each — and why the real answer
-        is usually both.
+        We&apos;ve run both BigQuery and Supabase (PostgreSQL) in production
+        across multiple client engagements. Here&apos;s what we&apos;ve learned
+        about when to use each — and why the real answer is usually both.
       </p>
 
       <h2>BigQuery: The Analytical Powerhouse</h2>

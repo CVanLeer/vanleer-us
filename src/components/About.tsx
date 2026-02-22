@@ -16,10 +16,9 @@ export function About() {
               not as a side project, but as the core of how his companies run.
             </p>
             <p className="mt-4 leading-relaxed text-slate-600">
-              With experience spanning multi-location restaurant operations,
-              data platform engineering, and end-to-end AI implementation, we
-              bring a rare combination: deep technical expertise and real
-              operational context.
+              With experience spanning multi-location operations, data platform
+              engineering, and end-to-end AI implementation, we bring a rare
+              combination: deep technical expertise and real operational context.
             </p>
             <p className="mt-4 leading-relaxed text-slate-600">
               We&apos;ve built demand forecasting systems, automated data

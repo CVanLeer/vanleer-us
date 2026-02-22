@@ -34,33 +34,33 @@ export function AIAgentsThatWorkPost() {
       <h2>Our Pipeline Monitor Agent</h2>
 
       <p>
-        We run a data pipeline that feeds 13 restaurant locations. When it
-        breaks, stores make wrong amounts of food. So we built an agent that
-        watches it constantly. Every 15 minutes, it checks:
+        One of our clients runs a data pipeline that feeds operations across
+        multiple locations. When it breaks, teams make wrong decisions. So we
+        built an agent that watches it constantly. Every 15 minutes, it checks:
       </p>
 
       <ul>
-        <li>Are all Cloud Functions healthy? (checking execution logs)</li>
-        <li>Is BigQuery data fresh? (comparing timestamps against expected schedule)</li>
-        <li>Is Supabase in sync? (checking row counts and latest records)</li>
-        <li>Are there any error spikes in Sentry?</li>
+        <li>Are all serverless functions healthy? (checking execution logs)</li>
+        <li>Is the data warehouse fresh? (comparing timestamps against expected schedule)</li>
+        <li>Is the operational database in sync? (checking row counts and latest records)</li>
+        <li>Are there any error spikes in the monitoring platform?</li>
       </ul>
 
       <p>
         When something is wrong, it doesn&apos;t just send an alert. It
         classifies the severity, identifies the likely root cause, and suggests
         a remediation step. A human still makes the final call — but they go
-        from &quot;something is broken, what do I do?&quot; to &quot;the BigQuery
+        from &quot;something is broken, what do I do?&quot; to &quot;the warehouse
         refresh failed because of a schema change, here&apos;s the fix.&quot;
       </p>
 
       <h2>Our Email Monitor Agent</h2>
 
       <p>
-        Another agent watches our business Gmail inbox every 3 minutes. It
-        categorizes incoming messages, extracts action items, and routes them
-        appropriately. Not with complex NLP — with a language model that
-        understands context.
+        Another agent we&apos;ve deployed watches a business email inbox on a
+        regular interval. It categorizes incoming messages, extracts action
+        items, and routes them appropriately. Not with complex NLP — with a
+        language model that understands context.
       </p>
 
       <p>
