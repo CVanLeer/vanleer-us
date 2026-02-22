@@ -106,7 +106,7 @@ export function Partnership() {
           <div className="mt-10 text-center">
             <a
               href="#contact"
-              className="inline-block rounded-lg bg-amber-600 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-amber-700"
+              className="inline-block rounded-lg bg-teal-600 px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-teal-700"
             >
               Start the Conversation
             </a>

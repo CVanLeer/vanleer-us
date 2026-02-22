@@ -46,7 +46,7 @@ export function Services() {
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold uppercase tracking-widest text-teal-600">
             Services
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
@@ -62,9 +62,9 @@ export function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-xl border border-slate-200 p-8 transition-all duration-300 hover:border-amber-200 hover:shadow-lg hover:shadow-amber-500/5 hover:-translate-y-1"
+              className="group rounded-xl border border-slate-200 p-8 transition-all duration-300 hover:border-teal-200 hover:shadow-lg hover:shadow-teal-500/5 hover:-translate-y-1"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-amber-50 text-amber-600 transition-colors group-hover:bg-amber-100">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 text-teal-600 transition-colors group-hover:bg-teal-100">
                 {service.icon}
               </div>
               <h3 className="mt-5 text-xl font-semibold text-slate-950">
