@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { BlogHeader } from "@/components/blog/BlogHeader";
 import { BlogCTA } from "@/components/blog/BlogCTA";
+import { FloatingCard } from "@/components/FloatingCard";
 import { getPost, getAllSlugs } from "@/lib/blog";
 import { CleanDataPost } from "@/components/blog/posts/clean-data";
 import { FirstDataPipelinePost } from "@/components/blog/posts/first-data-pipeline";
@@ -43,14 +44,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <>
       <Header />
-      <main className="pt-20 md:pt-24">
-        <article className="bg-white py-16 md:py-24">
-          <div className="mx-auto max-w-3xl px-6">
-            <BlogHeader post={post} />
-            <PostContent />
-            <BlogCTA />
-          </div>
-        </article>
+      <main className="pt-20 md:pt-24 space-y-8 md:space-y-12 pb-8 md:pb-12">
+        <FloatingCard>
+          <article className="py-16 md:py-24">
+            <div className="mx-auto max-w-3xl px-6">
+              <BlogHeader post={post} />
+              <PostContent />
+              <BlogCTA />
+            </div>
+          </article>
+        </FloatingCard>
       </main>
       <Footer />
     </>

@@ -47,7 +47,7 @@ export function Stats() {
   const { ref, inView } = useInView({ threshold: 0.3 });
 
   return (
-    <section className="bg-slate-950 py-20 md:py-24">
+    <section className="py-20 md:py-24">
       <div
         ref={ref}
         className="mx-auto grid max-w-6xl grid-cols-2 gap-10 px-6 md:grid-cols-4 md:gap-8"

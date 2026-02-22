@@ -93,7 +93,7 @@ export function AIReadiness() {
   }
 
   return (
-    <section id="readiness" className="bg-slate-50 py-24 md:py-32">
+    <section className="py-24 md:py-32">
       <div
         ref={ref}
         className={`mx-auto max-w-4xl px-6 transition-all duration-700 ${

@@ -2,12 +2,12 @@ import { Carousel } from "./Carousel";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white pt-20 md:pt-24">
+    <section className="relative overflow-hidden">
       {/* Carousel */}
       <Carousel />
 
       {/* Content overlay */}
-      <div className="relative bg-white py-16 md:py-24">
+      <div className="relative py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="max-w-3xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-400">

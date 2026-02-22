@@ -15,9 +15,9 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/90 backdrop-blur-md">
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-xl font-bold tracking-tight text-slate-950">
+        <Link href="/" className="text-xl font-bold tracking-tight text-white">
           Van Leer
         </Link>
 
@@ -27,14 +27,14 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+              className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/#contact"
-            className="rounded-lg bg-slate-950 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-slate-800"
+            className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-slate-950 transition-colors hover:bg-slate-200"
           >
             Get Started
           </Link>
@@ -42,7 +42,7 @@ export function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden"
+          className="md:hidden text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -58,12 +58,12 @@ export function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-slate-200 bg-white px-6 py-4 md:hidden">
+        <div className="border-t border-white/10 bg-slate-950/95 backdrop-blur-lg px-6 py-4 md:hidden">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block py-2 text-sm font-medium text-slate-600"
+              className="block py-2 text-sm font-medium text-slate-300"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -71,7 +71,7 @@ export function Header() {
           ))}
           <Link
             href="/#contact"
-            className="mt-2 block rounded-lg bg-slate-950 px-5 py-2.5 text-center text-sm font-medium text-white"
+            className="mt-2 block rounded-lg bg-white px-5 py-2.5 text-center text-sm font-medium text-slate-950"
             onClick={() => setMobileOpen(false)}
           >
             Get Started

@@ -30,7 +30,7 @@ export function Testimonials() {
   const { ref, inView } = useInView();
 
   return (
-    <section className="bg-white py-24 md:py-32">
+    <section className="py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div
           ref={ref}
