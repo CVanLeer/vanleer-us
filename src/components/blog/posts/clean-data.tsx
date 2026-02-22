@@ -16,19 +16,18 @@ export function CleanDataPost() {
         stack isn&apos;t a model or an algorithm — it&apos;s a product name.
       </p>
 
-      <h2>The Lemon Pepper Ranch Incident</h2>
+      <h2>The Silent Rename Disaster</h2>
 
       <p>
-        One morning, our demand forecasting system suddenly dropped 30,000+
-        servings from its projections. No code had changed. No deploy had gone
-        out. The pipeline was green.
+        One morning, a client&apos;s demand forecasting system suddenly dropped
+        30,000+ servings from its projections. No code had changed. No deploy
+        had gone out. The pipeline was green.
       </p>
 
       <p>
-        What happened? Someone renamed &quot;Lemon Pepper Ranch&quot; to &quot;Creamy
-        Ranch&quot; in the POS system. Our pipeline was joining tables on product
-        name — not product ID. When the name changed, every historical record
-        silently disappeared from the join.
+        What happened? Someone renamed a product in the POS system. The pipeline
+        was joining tables on product name — not product ID. When the name
+        changed, every historical record silently disappeared from the join.
       </p>
 
       <p>
