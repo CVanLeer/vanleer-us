@@ -45,7 +45,7 @@ export function Process() {
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <div key={step.number} className="relative">
-              <span className="text-5xl font-bold text-slate-200">
+              <span className="text-5xl font-bold text-slate-400/50">
                 {step.number}
               </span>
               <h3 className="mt-3 text-xl font-semibold text-slate-950">

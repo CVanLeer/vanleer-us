@@ -6,7 +6,7 @@ import { useCountUp } from "@/hooks/useCountUp";
 const stats = [
   { value: 80, suffix: "%", label: "of AI projects fail without clean data" },
   { value: 40, suffix: "%", label: "efficiency gains from connected systems" },
-  { value: 3, suffix: "x", label: "faster decisions with real-time data" },
+  { value: 10, suffix: "x", label: "faster decisions with real-time data" },
   { value: 24, suffix: "/7", label: "monitoring with AI agents" },
 ];
 

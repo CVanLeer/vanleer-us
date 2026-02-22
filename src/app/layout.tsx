@@ -28,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} antialiased min-h-screen`}>{children}</body>
+      <body className={`${inter.variable} antialiased min-h-screen`}>
+        <div className="marble-backdrop" aria-hidden="true" />
+        {children}
+      </body>
     </html>
   );
 }
