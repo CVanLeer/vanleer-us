@@ -8,7 +8,7 @@ export default function Home() {
         alt="Van Leer family crest"
         fill
         priority
-        className="object-contain"
+        className="object-cover"
       />
     </main>
   );
