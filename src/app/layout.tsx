@@ -8,15 +8,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Van Leer Consulting | AI Strategy & Implementation",
-  description:
-    "We help businesses implement AI systems that drive measurable results. Strategy, automation, and custom AI solutions for operations-driven companies.",
+  title: "Van Leer",
+  description: "Van Leer",
   openGraph: {
-    title: "Van Leer Consulting | AI Strategy & Implementation",
-    description:
-      "We help businesses implement AI systems that drive measurable results.",
+    title: "Van Leer",
     url: "https://vanleer.us",
-    siteName: "Van Leer Consulting",
+    siteName: "Van Leer",
     type: "website",
   },
 };
